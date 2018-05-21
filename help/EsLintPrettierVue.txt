@@ -1,0 +1,11 @@
+https://medium.com/@doppelmutzi/eslint-prettier-vue-workflow-46a3cf54332f
+1. Disable prettier ext from vs code
+2. yarn add --dev eslint-plugin-prettier eslint-config-prettier eslint-plugin-vue
+
+3.
+module.exports = {
+  // https://github.com/prettier/eslint-config-prettier
+  extends: ["plugin:prettier/recommended"]
+};
+4. npm script for all files autofix "lint-autofix": "eslint --ext .js,.vue src test --fix"
+5. npm script "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
